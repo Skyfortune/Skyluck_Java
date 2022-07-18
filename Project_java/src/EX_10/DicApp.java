@@ -26,6 +26,7 @@ public class DicApp {
 			switch (select) {
 			
 			case 1:// 한/영
+				String kword = sc.next();
 				kor2eng();
 				break;
 				
