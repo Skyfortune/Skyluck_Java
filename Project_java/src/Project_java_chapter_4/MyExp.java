@@ -1,0 +1,12 @@
+package Project_java_chapter_4;
+
+public class MyExp {
+	int base;
+	int exp;
+	int getValue() {
+		int res=1;
+		for(int i=0; i<exp; i++)
+			res = res*base;
+		return res;
+	}
+}
