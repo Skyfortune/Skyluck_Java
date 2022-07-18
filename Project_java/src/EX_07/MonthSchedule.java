@@ -16,7 +16,7 @@ public class MonthSchedule {
 		// 10이라고 적었다면 10개의 수열이 생기는것
 		sc = new Scanner(System.in);
 		// 입력받는칸이 이제 나온다.
-	}
+	} 
 
 	private void input() {
 		System.out.print("날짜(1~30)?");
