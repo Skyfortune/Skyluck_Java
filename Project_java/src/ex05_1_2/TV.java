@@ -1,4 +1,4 @@
-package ex05_1;
+package ex05_1_2;
 
 public class TV {
 	private int size;

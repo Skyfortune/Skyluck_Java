@@ -1,23 +1,35 @@
 package ex05_3;
 
-public class Won2Dollar extends Converter{
-//추상메소드이니까 오버라이딩으로 구현해야한다.
-	@Override
+class Won2Dollar extends Converter {
+	public Won2Dollar(double ratio) {
+		this.ratio = ratio;
+	}
+
+	// 우선 ratio 비율값을 선언한다.
 	protected double convert(double src) {
-		System.out.print("원");
+		return src / ratio;
 	}
-	@Override
+
+	// 그리고 변환값은 원/비율 이니까 이렇게 리턴시킨다.
+
+
+	protected String getsrcString() {
+		return "원";
+	}
+
+	protected String getdestString() {
+		return "달러";
+	}
+
 	protected String srcString() {
-		return ;
+		// TODO Auto-generated method stub
+		return null;
 	}
+
 	@Override
 	protected String destString() {
-		System.out.print("달러");
+		// TODO Auto-generated method stub
+		return null;
 	}
-	protected double ratio {
-		return;
-	}
-	
-	
 
 }

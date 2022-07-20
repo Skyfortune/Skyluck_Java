@@ -1,4 +1,4 @@
-package ex05_1;
+package ex05_1_2;
 
 class ColorTV extends TV {
 	private int resolution;

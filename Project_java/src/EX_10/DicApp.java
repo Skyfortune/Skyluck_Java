@@ -3,46 +3,23 @@ package EX_10;
 import java.util.Scanner;
 
 public class DicApp {
-	private Scanner sc;
 
-	private void eng2kor() {
-	}
-
-	private void kor2eng() {
-
-	}
-
-	private void finish() {
-
-	}
-
-	private void run() {
-		System.out.print("한영 단어 검색 프로그램입니다.");
-		// 맨 처음 나오도록 설정을 한다.
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("한영 단어 검색 프로그램입니다.");
 		while (true) {
-			System.out.println();
-			System.out.print("어떤 검색을 하시겠습니까(한/영:1, 영/한:2, 끝내기:3) >>");
-			int select = sc.nextInt();
-			switch (select) {
-			
-			case 1:// 한/영
-				String kword = sc.next();
-				kor2eng();
+			System.out.print("한글 단어?");
+			String search = sc.next();
+			if (search.equals("그만"))
 				break;
-				
-			case 2:// 영/한
-				eng2kor();
-				break;
-				
-			case 3:// 끝내기
-				finish();
-				return;
-				
-			default:
-				System.out.println("1~3 사이의 수를 입력해 주세요!");
-			}
-			// 1이라면 한영사전, 2라면 영한사전, 3이라면 종료. 나머지는 재입력 출력
+			String eng = Dictionary.kor2Eng(search);
+			if (eng.equals("false"))
+				System.out.println(search + "는 저의 사전에 없습니다.");
+			else
+				System.out.println(eng);
 		}
+		sc.close();
 	}
 
 }
