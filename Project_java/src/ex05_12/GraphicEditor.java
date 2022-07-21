@@ -13,14 +13,14 @@ public class GraphicEditor {
 		Scanner sc = new Scanner(System.in);
 		int control = sc.nextInt();
 		
-		switch(ture) {
-		if(int sc = 1) {
-			
-			if(int sc =2) {
-				
-			}
-		}
-		}
+//		switch(ture) {
+//		if(int sc = 1) {
+//			Shape.draw();
+//			if(int sc =2) {
+//				
+//			}
+//		}
+//		}
 		
 	}
 

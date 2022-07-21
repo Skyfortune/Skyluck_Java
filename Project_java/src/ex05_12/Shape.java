@@ -14,25 +14,28 @@ public abstract class Shape {
 	public Shape getNext() {
 		return next;
 	}
-	public abstract void draw();
+	public static void draw() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }
 
-class Line extends Shape {
-	   String name ="line";
-	   public void draw() {
-	      System.out.println("Line");
-	   }
-	}
-	class Rect extends Shape {
-	   String name ="Rect";
-	   public void draw() {
-	      System.out.println("Rect");
-	   }
-	}
-	class Circle extends Shape {
-	   String name ="circle";
-	   public void draw() {
-	      System.out.println("Circle");
-	   }
-	}
+//class Line extends Shape {
+//	   String name ="line";
+//	   public void draw() {
+//	      System.out.println("Line");
+//	   }
+//	}
+//	class Rect extends Shape {
+//	   String name ="Rect";
+//	   public void draw() {
+//	      System.out.println("Rect");
+//	   }
+//	}
+//	class Circle extends Shape {
+//	   String name ="circle";
+//	   public void draw() {
+//	      System.out.println("Circle");
+//	   }
+//	}
