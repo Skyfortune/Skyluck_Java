@@ -37,5 +37,7 @@ public class Basic {
 		u3.printage();
 		//디폴트 생성자
 	}	
+	
+	
 
 }
